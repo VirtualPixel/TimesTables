@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57234F3828ECB10A005F8766 /* PlusMinusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57234F3528ECB10A005F8766 /* PlusMinusButton.swift */; };
+		57234F3928ECB10A005F8766 /* CoinButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57234F3628ECB10A005F8766 /* CoinButton.swift */; };
+		57234F3A28ECB10A005F8766 /* PossibleAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57234F3728ECB10A005F8766 /* PossibleAnswer.swift */; };
+		57234F3C28ECB6F8005F8766 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57234F3B28ECB6F8005F8766 /* GameView.swift */; };
+		57234F6728EF2F8B005F8766 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57234F6628EF2F8B005F8766 /* Problem.swift */; };
+		57234F6A28EF3161005F8766 /* Problems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57234F6928EF3161005F8766 /* Problems.swift */; };
+		57C1D0F728ECB0240051B21D /* Milestone3RedoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1D0F628ECB0240051B21D /* Milestone3RedoneApp.swift */; };
+		57C1D0F928ECB0240051B21D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C1D0F828ECB0240051B21D /* ContentView.swift */; };
+		57C1D0FB28ECB0250051B21D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C1D0FA28ECB0250051B21D /* Assets.xcassets */; };
+		57C1D0FE28ECB0250051B21D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C1D0FD28ECB0250051B21D /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		57234F3528ECB10A005F8766 /* PlusMinusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusMinusButton.swift; sourceTree = "<group>"; };
+		57234F3628ECB10A005F8766 /* CoinButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinButton.swift; sourceTree = "<group>"; };
+		57234F3728ECB10A005F8766 /* PossibleAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PossibleAnswer.swift; sourceTree = "<group>"; };
+		57234F3B28ECB6F8005F8766 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		57234F6628EF2F8B005F8766 /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		57234F6928EF3161005F8766 /* Problems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problems.swift; sourceTree = "<group>"; };
+		57C1D0F328ECB0240051B21D /* Milestone3Redone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milestone3Redone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57C1D0F628ECB0240051B21D /* Milestone3RedoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone3RedoneApp.swift; sourceTree = "<group>"; };
+		57C1D0F828ECB0240051B21D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		57C1D0FA28ECB0250051B21D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57C1D0FD28ECB0250051B21D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57C1D0F028ECB0240051B21D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57234F3428ECB10A005F8766 /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				57234F3528ECB10A005F8766 /* PlusMinusButton.swift */,
+				57234F3628ECB10A005F8766 /* CoinButton.swift */,
+				57234F3728ECB10A005F8766 /* PossibleAnswer.swift */,
+			);
+			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		57234F6828EF2F90005F8766 /* Problems */ = {
+			isa = PBXGroup;
+			children = (
+				57234F6928EF3161005F8766 /* Problems.swift */,
+				57234F6628EF2F8B005F8766 /* Problem.swift */,
+			);
+			path = Problems;
+			sourceTree = "<group>";
+		};
+		57C1D0EA28ECB0240051B21D = {
+			isa = PBXGroup;
+			children = (
+				57234F3428ECB10A005F8766 /* ButtonStyles */,
+				57C1D0F528ECB0240051B21D /* Milestone3Redone */,
+				57C1D0F428ECB0240051B21D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57C1D0F428ECB0240051B21D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57C1D0F328ECB0240051B21D /* Milestone3Redone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57C1D0F528ECB0240051B21D /* Milestone3Redone */ = {
+			isa = PBXGroup;
+			children = (
+				57234F3B28ECB6F8005F8766 /* GameView.swift */,
+				57C1D0F628ECB0240051B21D /* Milestone3RedoneApp.swift */,
+				57C1D0F828ECB0240051B21D /* ContentView.swift */,
+				57234F6828EF2F90005F8766 /* Problems */,
+				57C1D0FA28ECB0250051B21D /* Assets.xcassets */,
+				57C1D0FC28ECB0250051B21D /* Preview Content */,
+			);
+			path = Milestone3Redone;
+			sourceTree = "<group>";
+		};
+		57C1D0FC28ECB0250051B21D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				57C1D0FD28ECB0250051B21D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57C1D0F228ECB0240051B21D /* Milestone3Redone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57C1D10128ECB0250051B21D /* Build configuration list for PBXNativeTarget "Milestone3Redone" */;
+			buildPhases = (
+				57C1D0EF28ECB0240051B21D /* Sources */,
+				57C1D0F028ECB0240051B21D /* Frameworks */,
+				57C1D0F128ECB0240051B21D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Milestone3Redone;
+			productName = Milestone3Redone;
+			productReference = 57C1D0F328ECB0240051B21D /* Milestone3Redone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57C1D0EB28ECB0240051B21D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					57C1D0F228ECB0240051B21D = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 57C1D0EE28ECB0240051B21D /* Build configuration list for PBXProject "Milestone3Redone" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57C1D0EA28ECB0240051B21D;
+			productRefGroup = 57C1D0F428ECB0240051B21D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57C1D0F228ECB0240051B21D /* Milestone3Redone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57C1D0F128ECB0240051B21D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57C1D0FE28ECB0250051B21D /* Preview Assets.xcassets in Resources */,
+				57C1D0FB28ECB0250051B21D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57C1D0EF28ECB0240051B21D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57234F6728EF2F8B005F8766 /* Problem.swift in Sources */,
+				57234F3928ECB10A005F8766 /* CoinButton.swift in Sources */,
+				57C1D0F928ECB0240051B21D /* ContentView.swift in Sources */,
+				57234F3828ECB10A005F8766 /* PlusMinusButton.swift in Sources */,
+				57234F3A28ECB10A005F8766 /* PossibleAnswer.swift in Sources */,
+				57234F6A28EF3161005F8766 /* Problems.swift in Sources */,
+				57234F3C28ECB6F8005F8766 /* GameView.swift in Sources */,
+				57C1D0F728ECB0240051B21D /* Milestone3RedoneApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		57C1D0FF28ECB0250051B21D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57C1D10028ECB0250051B21D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57C1D10228ECB0250051B21D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Milestone3Redone/Preview Content\"";
+				DEVELOPMENT_TEAM = 3LPAZYKA42;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wells.justin.Milestone3Redone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57C1D10328ECB0250051B21D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Milestone3Redone/Preview Content\"";
+				DEVELOPMENT_TEAM = 3LPAZYKA42;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wells.justin.Milestone3Redone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57C1D0EE28ECB0240051B21D /* Build configuration list for PBXProject "Milestone3Redone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57C1D0FF28ECB0250051B21D /* Debug */,
+				57C1D10028ECB0250051B21D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57C1D10128ECB0250051B21D /* Build configuration list for PBXNativeTarget "Milestone3Redone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57C1D10228ECB0250051B21D /* Debug */,
+				57C1D10328ECB0250051B21D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57C1D0EB28ECB0240051B21D /* Project object */;
+}
