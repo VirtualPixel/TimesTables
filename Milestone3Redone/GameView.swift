@@ -12,14 +12,17 @@ struct GameView: View {
     @State private var gameOver = false
     @Environment(\.dismiss) var dismiss
     
-    
     @State private var count = 0
+    @State private var right = 0
+    @State private var wrong = 0
     
     var body: some View {
+        let possibleAnswers: [Int] = problems.problems[count].possibleAnswers
+        
         NavigationView {
             VStack {
                 HStack {
-                    Text("\(problems.problems[0].table)")
+                    Text("\(problems.problems[count].table)")
                         .frame(width: 100)
                         .font(.system(size: 150))
                         .minimumScaleFactor(0.01)
@@ -32,7 +35,8 @@ struct GameView: View {
                         .minimumScaleFactor(0.01)
                         .padding()
                         .foregroundColor(.black)
-                    Text("\(problems.problems[0].multiplier)")
+                    
+                    Text("\(problems.problems[count].multiplier)")
                         .frame(width: 100)
                         .font(.system(size: 150))
                         .minimumScaleFactor(0.01)
@@ -43,36 +47,49 @@ struct GameView: View {
                 
                 HStack {
                     ForEach(0..<2){ number in
-                        Button("1") {
-                            count += 1
+                        Button("\(possibleAnswers[number])") {
+                            gameManagement(guess: possibleAnswers[number])
                         }
                         .buttonStyle(PossibleAnswer())
                     }
                 }
                 HStack {
                     ForEach(2..<4){ number in
-                        Button("2") {
-                            if count >= 5 {
-                                dismiss()
-                            }
+                        Button("\(possibleAnswers[number])") {
+                            gameManagement(guess: possibleAnswers[number])
                         }
                         .buttonStyle(PossibleAnswer())
                     }
                 }
             }
+            .alert("Game Over!", isPresented: $gameOver) {
+                Button("Okay", role: .cancel) { endGame() }
+            } message: {
+                Text("You completed the game. Out of \(problems.problems.count) questions, you got \(right) correct, and \(wrong) incorrect.")
+            }
         }
     }
     
-    func gameManagement() {
+    func gameManagement(guess: Int) {
+        guess == problems.problems[count].answer ? correct() : incorrect()
         
+        count < problems.problems.count - 1 ? nextRound() : gameOver.toggle()
     }
     
     func correct() {
-        
+        right+=1
     }
     
     func incorrect() {
-        
+        wrong+=1
+    }
+    
+    func nextRound() {
+        count+=1
+    }
+    
+    func endGame() {
+        dismiss()
     }
 }
 

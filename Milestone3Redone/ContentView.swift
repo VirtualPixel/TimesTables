@@ -12,6 +12,7 @@ struct ContentView: View {
     
     let questionCount: Array = [5, 10, 20]
     let range = 2...12
+    let impactMed = UIImpactFeedbackGenerator(style: .medium)
     
     //Settings
     @State private var questionSelection = 5
@@ -32,7 +33,17 @@ struct ContentView: View {
                     
                     
                     Button("\(multiplicationTable)") {
+                        let oldValue = multiplicationTable
                         
+                        while oldValue == multiplicationTable {
+                            withAnimation(.easeInOut(duration: 0.75)) {
+                                coinFlipAmount += 1080
+                                impactMed.impactOccurred()
+                                multiplicationTable = Int.random(in: range)
+                            }
+                        }
+                        
+                        setProblems()
                     }
                     .buttonStyle(CoinButton())
                     .rotation3DEffect(.degrees(coinFlipAmount), axis: (x: 0, y: 1, z: 0))
@@ -54,35 +65,55 @@ struct ContentView: View {
                     }
                 }
                 .pickerStyle(.segmented)
+                .onChange(of: questionSelection) { newValue in
+                    setProblems()
+                }
                 Spacer()
                 
-                Button("Play") {
-                    problems.problems = Problem(table: multiplicationTable, questions: questionSelection).generateQuestions()
-                    settingsChosen = true
+                NavigationLink {
+                    GameView(problems: problems)
+                        .navigationBarBackButtonHidden(true)
+                } label: {
+                    Text("PLAY")
+                    .frame(width: 175, height: 100)
+                    .background(.green)
+                    .foregroundColor(.white)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .font(.system(size: 500))
+                    .minimumScaleFactor(0.01)
                 }
-                .frame(width: 175, height: 100)
-                .background(.green)
-                .foregroundColor(.white)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-                .font(.system(size: 500))
-                .minimumScaleFactor(0.01)
             }
             .padding()
             .navigationTitle("Times Tables")
         }
-        .sheet(isPresented: $settingsChosen) {
-            GameView(problems: problems)
-        }
+        .onAppear(perform: {
+            setProblems()
+        })
     }
+        
     
     func decrease(){
-        if multiplicationTable == range.lowerBound { return }
+        if multiplicationTable == range.lowerBound {
+            impactMed.impactOccurred()
+            return
+        }
         multiplicationTable -= 1
+        
+        setProblems()
     }
     
     func increase(){
-        if multiplicationTable == range.upperBound { return }
+        if multiplicationTable == range.upperBound {
+            impactMed.impactOccurred()
+            return
+        }
         multiplicationTable += 1
+        
+        setProblems()
+    }
+    
+    func setProblems() {
+        problems.problems = Problem(table: multiplicationTable, questions: questionSelection).generateQuestions()
     }
 }
 
